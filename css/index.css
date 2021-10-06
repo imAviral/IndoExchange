@@ -1,0 +1,180 @@
+@import url("./global.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+  background-image: url("../assets/svg/bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100vw;
+}
+.nav {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1.25em;
+  position: relative;
+  left: 5vw;
+  top: 2.5vh;
+}
+#logo h1 {
+  font-size: 1rem;
+  font-family: "Lemonada", cursive;
+  color: var(--text);
+}
+.baseBox {
+  display: flex;
+  align-items: center;
+}
+#baseBox__heading {
+  font-size: 0.64rem;
+  font-family: "Lemonada", cursive;
+  text-align: center;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.ind {
+  margin-left: 2em;
+  padding: 0.75em 3em 0.75em 1.5em;
+  background-color: #fff;
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "Lemonada", cursive;
+  background-image: url("../assets/img/ind.png");
+  background-repeat: no-repeat;
+  background-position: 84% 48%;
+}
+.header {
+  margin-left: 7vw;
+  margin-top: 7vh;
+}
+.header > h2 {
+  color: #fff;
+  line-height: 45px;
+  letter-spacing: -1px;
+  padding: 0.75em 0em;
+  font-family: "Georama", sans-serif;
+}
+.header > p {
+  min-width: 10vw;
+  max-width: 14vw;
+  color: var(--background);
+  background-color: var(--backgroundHighlight);
+  text-align: center;
+  padding: 1em;
+  font-family: "Georama", sans-serif;
+}
+.main__Box {
+  width: 80vw;
+  height: 32vh;
+  margin-left: 10vw;
+  margin-top: 11.55vh;
+  background-color: rgba(255, 255, 255, 0.93);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0em 1.5em;
+  justify-content: space-between;
+}
+.main__Box_details {
+  margin-left: 1vw;
+}
+.main__Box_details > h5 {
+  font-family: "Georama", sans-serif;
+  color: var(--mainText);
+  font-size: 1.5rem;
+  padding: 0.25em 0em;
+  text-align: left;
+}
+.main__Box_details > p {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--subText);
+  font-size: 0.75em;
+  text-align: left;
+}
+.cInput__box {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.cInput__box_input {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.cInput__box_input select {
+  background-color: var(--btnBackground);
+  border: 2px solid var(--backgroundHighlight);
+  padding: 0.75em;
+}
+.cInput__box button {
+  background-color: var(--backgroundHighlight);
+  color: var(--text);
+  padding: 0.5em;
+  border: 2px solid var(--backgroundHighlight);
+  border-radius: 10px;
+}
+.main__Box_convert {
+  margin-right: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__Box_convert > p {
+  width: 30vw;
+  background-image: url("../assets/svg/underScore.svg");
+  padding-bottom: 2em;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  background-position-x: 50%;
+  font: bold;
+  font-weight: 700;
+}
+.main__Box_convert_input {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  text-transform: capitalize;
+  color: var(--subText);
+  align-items: center;
+}
+.main__Box_convert_input input {
+  width: 14vw;
+  background-color: var(--btnBackground);
+  color: var(--mainText);
+  padding: 0.5em;
+  border: 2px solid var(--backgroundHighlight);
+  border-radius: 10px;
+}
+.main__Box_convert_input input:focus {
+  border: 2px solid var(--backgroundHighlight);
+}
+@media (max-width: 52.25em) {
+  .header > p {
+    min-width: 50vw;
+  }
+  .main__Box {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .main__Box_details > h5 {
+    text-align: center;
+  }
+  .main__Box_details > p {
+    text-align: center;
+  }
+  .main__Box_convert_input input {
+    width: 50vw;
+  }
+}
